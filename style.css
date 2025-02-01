@@ -1,0 +1,92 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3e5f5;  /* Light purple background */
+    color: #333;
+}
+
+/* Centered container */
+.landing-container, .form-container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Header styles */
+.landing-header h1 {
+    font-size: 40px;
+    color: #6a1b9a;
+    margin-bottom: 10px;
+}
+
+.landing-header p {
+    font-size: 18px;
+    color: #777;
+}
+
+/* Form styles */
+input[type="text"], input[type="password"] {
+    width: 80%;
+    max-width: 400px;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #6a1b9a;
+}
+
+/* Button styles */
+button, .action-btn {
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #6a1b9a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .action-btn:hover {
+    background-color: #8e24aa;  /* Slightly lighter purple on hover */
+}
+
+/* Link text */
+.link-text {
+    color: #6a1b9a;
+    font-weight: bold;
+}
+
+.link-text:hover {
+    text-decoration: underline;
+}
+
+/* Layout for the buttons on the landing page */
+.landing-buttons {
+    margin-top: 30px;
+}
+
+.landing-buttons a {
+    margin: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .landing-container, .form-container {
+        padding: 20px;
+        width: 90%;
+    }
+}
